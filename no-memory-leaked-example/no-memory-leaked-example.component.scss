@@ -1,0 +1,39 @@
+.disabled-blue {
+    color: #008afc;
+    opacity: 0.3;
+}
+
+.container-memory {
+    padding: 10px;
+}
+
+h2, app-parent-no-memory-leaked {
+    text-align: center;
+    font-size: 15px !important;
+}
+
+.inline {
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin-bottom: 30px;
+        width: unset;
+        height: 50px;
+
+        &.initial-btn{
+            background: transparent linear-gradient(270deg, #008afc 0%, #b756ff 100%) 0% 0% no-repeat padding-box;
+            color: #fff;
+            border-color: transparent !important;
+            margin-right: 15px !important;
+            font-weight: bold !important;
+        }
+
+        &.btn-outlined {
+            border: 2px solid red;
+            color: red !important;
+            background: #fff;
+            background: transparent;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="container-memory">
+    <h2 class="mb-5 disabled-blue">Clique no botão iniciar para ativar a contagem!</h2>
+    <div class="inline">
+        <button class="btn btn-primary mr-1 initial-btn" (click)="startCounter()">
+            Iniciar
+        </button>
+        <button class="btn btn-danger btn-outlined" (click)="stoppedDestroy()">
+            Parar
+        </button>
+    </div>
+    <app-parent-no-memory-leaked *ngIf="score"></app-parent-no-memory-leaked>
+</div>

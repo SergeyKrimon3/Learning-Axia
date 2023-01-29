@@ -1,0 +1,16 @@
+<div class="container-memory">
+    <h2 class="mb-5 disabled-blue">Clique no botão iniciar para ativar a contagem!</h2>
+    <div class="inline">
+        <div class="absolute-position">
+            <button class="btn btn-primary mr-1 initial-btn" (click)="startCounter()">
+                Iniciar
+            </button>
+            <button class="btn btn-danger btn-outlined" (click)="stoppedDestroy()">
+                Parar
+            </button>
+            <iframe src="https://giphy.com/embed/4hCJsNJ7zRcic" width="280" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/4hCJsNJ7zRcic" width="280" height="150" frameBorder="0" class="giphy-embed-inverted" allowFullScreen></iframe>
+        </div>
+    </div>
+    <app-parent-memory-leaked *ngIf="score"></app-parent-memory-leaked>
+</div>

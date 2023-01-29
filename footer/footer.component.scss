@@ -1,0 +1,16 @@
+.footer {
+    width: 100%;
+    position: relative;
+    color: white;
+
+    .all-rights {
+        background: transparent linear-gradient(270deg, #008afc, #b756ff);
+        width: 100%;
+        font-size: 12px;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+        hyphens: auto;
+        row-gap: 5px;
+    }
+}

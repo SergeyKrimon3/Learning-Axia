@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    display: grid;
+    height: 90px;
+    background: transparent linear-gradient(270deg, #008afc, #b756ff);
+    align-items: center;
+    min-width: 320px;
+    padding: 20px 30px 20px 30px;
+    row-gap: 20px;
+    grid-template-columns: 60px 200px auto 200px;
+    grid-template-areas: "menu language logo user";
+
+    .logo-container {
+        grid-area: logo;
+        cursor: pointer;
+        margin: auto;
+
+        img {
+            height: 58px;
+            width: 140px;
+        }
+    }
+
+    .learnig {
+        display: flex;
+        justify-content: flex-end;
+        grid-area: user;
+
+        span {
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .br-flag {
+        zoom: 2;
+    }
+}

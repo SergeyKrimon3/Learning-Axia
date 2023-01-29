@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="navbar-collapse">
+			<div class="navbar-nav">
+				<div class="inline">
+					<a class="nav-item nav-link" routerLink="memory-leaked-example" routerLinkActive="active">
+						<h1 [ngClass]="!setColors ? 'disabled-red': 'disabled-blue'">Memory Leaked example</h1>
+					</a>
+					<a class="nav-item nav-link" routerLink="no-memory-leaked-example" routerLinkActive="active">
+						<h1 [ngClass]="!setColors ? 'disabled-blue': 'disabled-red'">No Memory Leaked example</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<hr class="border"/>
+	<router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
